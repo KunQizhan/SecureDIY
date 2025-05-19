@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                       /* 将 TS 编译为哪个版本的 JS，这里选 ES6 */
+    "module": "ESNext",                    /* 使用 ESNext 模块系统（与 webpack 一起使用） */
+    "moduleResolution": "Node",           /* 模块解析策略 */
+    "jsx": "react-jsx",                   /* JSX支持，使用React的JSX变体 */
+    "strict": true,                       /* 开启所有严格类型检查选项 */
+    "esModuleInterop": true,              /* 允许默认导入commonjs模块 */
+    "skipLibCheck": true,                 /* 跳过库文件的类型检查，加快编译 */
+    "forceConsistentCasingInFileNames": true  /* 强制文件名大小写一致 */
+  },
+  "include": [
+    "src"    /* 指定要编译的文件夹 */
+  ]
+}

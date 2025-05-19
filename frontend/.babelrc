@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "@babel/preset-env",         /* 转译最新JavaScript特性 */
+    "@babel/preset-react",       /* 转译JSX语法以及支持React相关优化 */
+    "@babel/preset-typescript"   /* 转译TypeScript语法（去除类型） */
+  ]
+}
