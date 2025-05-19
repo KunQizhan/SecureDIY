@@ -35,9 +35,16 @@ module.exports = {
     })
   ],
   devServer: {
-    port: 3000,        // 开发服务器端口
-    open: true,        // 自动打开浏览器
-    hot: true          // 开启热模块替换(HMR)，实时刷新
-    // 注意：我们使用了 CORS，因此这里不设置 proxy。如果没有启用CORS，可以配置 proxy 将API请求转发到后端。
+    port: 3000,
+    open: true,
+    hot: true,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false
+      }
+    ]
   }
 };

@@ -3,6 +3,10 @@ import { Tabs } from 'antd';
 import type { TabsProps } from 'antd';
 import HoneypotLogsPage from './pages/HoneypotLogs';
 import BlockedIPsPage from './pages/BlockedIPs';
+import LogAndBlacklistPage from './pages/Table/LogAndBlacklistPage';
+import DashboardPage from './pages/Dashboard';
+const { TabPane } = Tabs;
+
 
 // 定义日志条目类型
 interface LogEntry {
@@ -16,7 +20,7 @@ const TAB_KEY_LOGS = 'logs';
 const TAB_KEY_BLOCKED = 'blocked';
 
 // API 基础URL（开发模式下前端运行在不同端口，需要指定后台服务的地址）
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'http://localhost:3001';
 
 const App: React.FC = () => {
   // 状态：蜜罐日志列表 和 封锁IP列表
@@ -116,8 +120,16 @@ const App: React.FC = () => {
     <div style={{ padding: '20px' }}>
       {/* Ant Design的选项卡组件Tabs，用于在日志页和封锁IP页之间切换 */}
       <Tabs defaultActiveKey={TAB_KEY_LOGS} items={tabs} />
-    </div>
-  );
-};
+      <Tabs defaultActiveKey="logs">
+        <TabPane tab="蜜罐日志 / 封锁IP" key="logs">
++          <LogAndBlacklistPage />
+        </TabPane>
+        <TabPane tab="仪表盘" key="dashboard">
+          <DashboardPage />
+        </TabPane>
+      </Tabs>
+     </div>
+   );
+ }
 
 export default App;
