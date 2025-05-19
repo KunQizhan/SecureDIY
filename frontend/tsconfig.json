@@ -7,8 +7,10 @@
     "strict": true,                       /* 开启所有严格类型检查选项 */
     "esModuleInterop": true,              /* 允许默认导入commonjs模块 */
     "skipLibCheck": true,                 /* 跳过库文件的类型检查，加快编译 */
-    "forceConsistentCasingInFileNames": true  /* 强制文件名大小写一致 */
-  },
+    "forceConsistentCasingInFileNames": true,  /* 强制文件名大小写一致 */
+    "resolveJsonModule": true,   // 允许从 .json 文件中 import 内容
+    "esModuleInterop": true      // 兼容 CommonJS 导出
+  },  
   "include": [
     "src"    /* 指定要编译的文件夹 */
   ]

@@ -1,0 +1,26 @@
+{
+  "tabs": {
+    "logs": "Honeypot Logs / Blocklist",
+    "dashboard": "Dashboard"
+  },
+  "buttons": {
+    "refresh": "Refresh Logs",
+    "search": "Search",
+    "export": "Export CSV",
+    "block": "Block IP",
+    "unblock": "Unblock IP"
+  },
+  "placeholders": {
+    "ip": "Filter by IP",
+    "path": "Filter by Path"
+  },
+  "alerts": {
+    "honeypot": "Honeypot Alert",
+    "blacklistAdded": "Blacklist Updated",
+    "blacklistRemoved": "Blacklist Updated"
+  },
+  "dashboard": {
+    "hourly": "Hourly Stats (Recent Triggers)",
+    "daily": "Daily Stats (Total Triggers)"
+  }
+}

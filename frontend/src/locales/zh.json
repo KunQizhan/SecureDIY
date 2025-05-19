@@ -1,0 +1,61 @@
+{
+  "tabs": {
+    "honeypotLogs": "蜜罐日志",
+    "blockedIPs": "封锁IP",
+    "logsAndBlacklist": "蜜罐日志 / 封锁IP",
+    "dashboard": "仪表盘",
+    "logs": "蜜罐日志",
+    "blacklist": "封锁IP"
+  },
+  "buttons": {
+    "refresh": "刷新日志",
+    "search": "搜索",
+    "export": "导出 CSV",
+    "block": "封锁IP",
+    "blocked": "已封锁",
+    "unblock": "解除封锁"
+  },
+  "placeholders": {
+    "ip": "按IP",
+    "path": "按路径"
+  },
+  "alerts": {
+    "honeypot": "蜜罐触发警报",
+    "blacklistAdded": "黑名单更新",
+    "blacklistRemoved": "黑名单更新"
+  },
+  "notifications": {
+    "honeypotAlert": "蜜罐触发警报",
+    "honeypotDesc": "IP {ip} 触发路径 {path}",
+    "blacklistUpdate": "黑名单更新",
+    "blacklistAdded": "IP {ip} 已封锁",
+    "blacklistRemoved": "IP {ip} 已解封"
+  },
+  "messages": {
+    "logsFetchFailed": "获取日志失败",
+    "blacklistFetchFailed": "获取黑名单失败",
+    "logsRefreshed": "日志已刷新",
+    "noLogsToExport": "无日志可导出",
+    "noBlacklistToExport": "无封锁数据可导出",
+    "ipBlocked": "封锁 {ip}",
+    "ipUnblocked": "解封 {ip}"
+  },
+  "columns": {
+    "ip": "IP地址",
+    "path": "触发路径",
+    "time": "时间",
+    "action": "操作"
+  },
+  "export": {
+    "logsTitle": "蜜罐日志",
+    "blacklistTitle": "封锁IP列表"
+  },
+  "dashboard": {
+    "hourly": "按小时统计（最近触发情况）",
+    "daily": "按天统计（每日触发总次数）"
+  },
+  "errors": {
+    "fetchLogsFailed": "获取日志失败",
+    "fetchBlockedIPsFailed": "获取封锁IP列表失败"
+  }
+}
